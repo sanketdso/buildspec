@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+ install:
+   commands:
+     - aws s3 cp s3://s3buildspec/specfiles/buildspec.yaml .
+ pre_build:
+   commands:
+     - chmod 777 run-buildspec.sh
+ build:
+   commands:
+     - ./run-buildspec.sh
