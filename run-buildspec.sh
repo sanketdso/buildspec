@@ -1,5 +1,5 @@
 #!/bin/bash
-buildspec_file="./buildspec.yml"
+buildspec_file="./buildspec.yaml"
 if [ -f "$buildspec_file" ]
 then
 echo "Executing centralized buildspec..."
